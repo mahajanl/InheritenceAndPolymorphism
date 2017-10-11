@@ -16,5 +16,18 @@ namespace InheritenceAndPolymorphismWeek3Day3
         {
             get { return this.numberOfWheels; }
         }
+
+        public Automobile (int numberOfWheels, float wheelSize, int numberOfDoors, int seats, int carryingCap, string color, double movementSpeed)
+        {
+            //if we leave it like this, we won't be setting any of the fields that we have available in Vehicle until theyre set to protected
+            this.numberOfWheels = numberOfWheels;
+            this.wheelSize = wheelSize;
+            this.numberOfDoors = numberOfDoors;
+            this.seats = seats;
+            this.color = color;
+            this.movementSpeed = movementSpeed;
+        }
+
+
     }
 }
