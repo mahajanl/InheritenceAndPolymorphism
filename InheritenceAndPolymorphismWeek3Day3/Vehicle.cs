@@ -15,6 +15,7 @@ namespace InheritenceAndPolymorphismWeek3Day3
         private float gearRatio;
         private float engineSize;
 
+        //ALL OF OUR SUBCLASSES WILL HAVE THESE THINGS IN COMMON
         public int Seats
         { get { return this.seats; }
         }
@@ -26,6 +27,14 @@ namespace InheritenceAndPolymorphismWeek3Day3
         public string Color
         { get { return this.color; }
           set { this.color = value; }
+        }
+
+        //CONSTRUCTORS
+        public Vehicle (int seats, int carryingCap, string color, double movementSpeed)
+        {   this.seats = seats;
+            this.carryingCap = carryingCap;
+            this.color = color;
+            this.movementSpeed = movementSpeed;
         }
 
         
