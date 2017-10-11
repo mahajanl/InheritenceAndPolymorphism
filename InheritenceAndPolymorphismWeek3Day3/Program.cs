@@ -20,6 +20,13 @@ namespace InheritenceAndPolymorphismWeek3Day3
             optimus.Move();
             optimus.Move();
             Console.WriteLine("Automobile Distance Traveled: " +optimus.DistanceTraveled);
+
+            Boat eclipse = new Boat(2, 440, "Silver", 70.0d, .9d);
+            eclipse.Move();
+            eclipse.Move();
+            Console.WriteLine("Boat distance traveled: " +eclipse.DistanceTraveled);
+
+
         }
 
 
