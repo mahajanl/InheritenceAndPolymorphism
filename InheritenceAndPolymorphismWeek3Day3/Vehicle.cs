@@ -8,13 +8,13 @@ namespace InheritenceAndPolymorphismWeek3Day3
 {
     class Vehicle
     {
-        private int seats;
-        private int carryingCap;
-        private string color;
-        private double movementSpeed;
+        protected int seats;
+        protected int carryingCap;
+        protected string color;
+        protected double movementSpeed;
         private float gearRatio;
         private float engineSize;
-        private double distanceTraveled;
+        protected double distanceTraveled;
 
         //ALL OF OUR SUBCLASSES WILL HAVE THESE THINGS IN COMMON
         public int Seats
