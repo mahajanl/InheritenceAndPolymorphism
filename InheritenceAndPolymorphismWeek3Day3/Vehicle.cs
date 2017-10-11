@@ -14,6 +14,7 @@ namespace InheritenceAndPolymorphismWeek3Day3
         private double movementSpeed;
         private float gearRatio;
         private float engineSize;
+        private double distanceTraveled;
 
         //ALL OF OUR SUBCLASSES WILL HAVE THESE THINGS IN COMMON
         public int Seats
@@ -29,14 +30,28 @@ namespace InheritenceAndPolymorphismWeek3Day3
           set { this.color = value; }
         }
 
+        public double DistanceTraveled
+        { get { return this.distanceTraveled; }
+        }
+
+
         //CONSTRUCTORS
+        public Vehicle ()
+        {
+
+        }
+
         public Vehicle (int seats, int carryingCap, string color, double movementSpeed)
         {   this.seats = seats;
             this.carryingCap = carryingCap;
             this.color = color;
             this.movementSpeed = movementSpeed;
+            this.distanceTraveled = 0d;
+            //d at the end because of  a double being entered
         }
 
+        //METHODS
+        public 
         
     }
 }
