@@ -51,7 +51,9 @@ namespace InheritenceAndPolymorphismWeek3Day3
         }
 
         //METHODS
-        public 
+        public void Move()
+        {   distanceTraveled += movementSpeed;
+        }
         
     }
 }
