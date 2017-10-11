@@ -9,12 +9,17 @@ namespace InheritenceAndPolymorphismWeek3Day3
     class Program
     {
         static void Main(string[] args)
-        {   Vehicle Truck = new Vehicle(4, 2500, "Blue", 55.0d);
+        {
+            //Vehicle Truck = new Vehicle(4, 2500, "Blue", 55.0d);
 
-            Truck.Move();
-            Truck.Move();
-            Console.WriteLine(Truck.DistanceTraveled);
+            //    Truck.Move();
+            //    Truck.Move();
+            //    Console.WriteLine(Truck.DistanceTraveled);
 
+            Automobile optimus = new Automobile(6, 25, 4, 4, 3000, "blue", 70.0d);
+            optimus.Move();
+            optimus.Move();
+            Console.WriteLine("Automobile Distance Traveled: " +optimus.DistanceTraveled);
         }
 
 
