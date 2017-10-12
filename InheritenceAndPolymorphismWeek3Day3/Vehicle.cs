@@ -50,10 +50,14 @@ namespace InheritenceAndPolymorphismWeek3Day3
             //d at the end because of  a double being entered
         }
 
-        //METHODS
+        //CONSTRUCTORS N METHODS
         public virtual void Move()
         {   distanceTraveled += movementSpeed;
+            
         }
+
+        //CANNOT HAVE AN ABSTRACT METHOD WITHOUT AN ABSTRACT CLASS
+        //public abstract void StartEngine(int keycode);
         
     }
 }
