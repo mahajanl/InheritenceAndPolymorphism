@@ -19,14 +19,17 @@ namespace InheritenceAndPolymorphismWeek3Day3
             Automobile optimus = new Automobile(6, 25, 4, 4, 3000, "blue", 70.0d);
             optimus.Move();
             optimus.Move();
-            Console.WriteLine("Automobile Distance Traveled: " +optimus.DistanceTraveled);
+            Console.WriteLine("Automobile " +optimus.GetDistanceTraveled());
 
             Boat eclipse = new Boat(2, 440, "Silver", 70.0d, .9d);
             eclipse.Move();
             eclipse.Move();
-            Console.WriteLine("Boat distance traveled: " +eclipse.DistanceTraveled);
+            Console.WriteLine("Boat " +eclipse.GetDistanceTraveled());
 
-
+            Aircraft boeing = new Aircraft(70, 30000, "turquoise", 600);
+            boeing.Move();
+            boeing.Move();
+            Console.WriteLine("Airplane " + boeing.GetDistanceTraveled());
         }
 
 

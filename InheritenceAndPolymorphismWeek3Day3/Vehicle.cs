@@ -56,6 +56,11 @@ namespace InheritenceAndPolymorphismWeek3Day3
             
         }
 
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance Traveled: " + distanceTraveled + "\n";
+        }
+
         //CANNOT HAVE AN ABSTRACT METHOD WITHOUT AN ABSTRACT CLASS
         //public abstract void StartEngine(int keycode);
         
